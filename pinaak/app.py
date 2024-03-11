@@ -49,5 +49,6 @@ def response():
 @app.route('/about')
 def method_name():
     return render_template("about.html", title='About')
-
-app.run()
+    
+if __name__ ==  '__main___':
+    app.run()
