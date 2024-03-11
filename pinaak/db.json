@@ -1,0 +1,26 @@
+{
+    "meta-data": {
+        "1": {
+            "name": "visitor",
+            "v_count": 2,
+            "s_count": 2
+        },
+        "2": {
+            "name": "subscriber",
+            "s_count": 2,
+            "v_count": 2
+        }
+    },
+    "data": {
+        "1": {
+            "username": "user",
+            "email": "user@gmail.com",
+            "signfor": "budget"
+        },
+        "2": {
+            "username": "user",
+            "email": "user@gmail.com",
+            "signfor": "mid"
+        }
+    }
+}
