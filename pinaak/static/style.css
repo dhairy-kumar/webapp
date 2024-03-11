@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: scroll;
+    background-color: aliceblue;
+}
+
+#main {
+    margin: 15px;
+    height: 100%;
+    display: flex;
+}
+
+#thank {
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    left: 50%; top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#message {
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mid {
+    height: 55%;
+    width: 40%;
+    border-color: black;
+    background-color: aqua;
+    position: absolute;
+    top: 66%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
+
+#budget {
+    height: 55%;
+    width: 40%;
+    border-color: black;
+    background-color: aqua;
+    position: absolute;
+    top: 66%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+#content-budget, #content-mid {
+    margin: 20px;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 15px;
+    text-align: center;
+  }
+
+
+.footer-text-left {
+    padding-left: 40px;
+    float:left;
+}
+  
+a.menu:hover {
+    background-color:yellow;
+}
+
+h4.join:active {
+    background-color: aliceblue;
+}
+
+#btn-1, #btn-2 {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("./plus_1828817.png") no-repeat center;
+    background-size: 65px 65px;
+    cursor: pointer;
+    opacity: 0.7;
+    height: 37px;
+    width: 37px;
+    border-radius: 17px;
+}
+
+@media screen and (max-width: 400px) {
+    #message {
+        position: absolute;
+        top: 40%;
+    }
+    #mid, #budget {
+        top: 79%;
+    }
+}

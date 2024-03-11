@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="shortcut icon" href="./static/honor.png" type="image/x-icon">
+    <title>{{title}}</title>
+</head>
+<body>
+    <nav><a href="/about">About</a></nav>
+    <center>
+    <div id="main">
+        <h1 id="thank">Thank You<span style="color: darkslategrey;"> for<br>showing interest</span></h1>
+        <p id="message">We are working on the product, please consider joining the wishlist we will inform you when it will be available...</p>
+        <div id="budget" style="border: 2px solid;">
+            <div id="content-budget">
+                <center>
+                    <h3 style="color: chocolate; padding: 9px">Protoype 1</h3>
+                    <p>
+                        This is a lite version of Raman Spectrosopy, we are trying to achive the detection harmful chemical present in food items trought this.
+                    </p>
+                    <ul style="display: inline-block;">
+                        <u>It can detect:</u>
+                        <li>Harmful Chemical</li>
+                        <li>Microbes</li>
+                        <li>Nutritional values</li>
+                        <li>and more...</li>
+                    </ul>
+                    <h4 class="join">join wishlist <button id="btn-1" onclick="join_budget()">Join</button></h4>
+                    <p style="padding: 3px;">&#8377 511</p>
+                    <div id="join-budget" style="visibility: hidden;">
+                        <form action="/upvote" method="post">
+                            <input type="hidden" name="type" value="budget">
+                            Email: <input type="email" name="email" id="email" placeholder="username@gmail.com" required><br>
+                            Name: <input type="text" name="username" id="username" placeholder="User Name" required><br>
+                            <input style="margin: 3px;" type="submit" value="Submit" onclick="done1()">
+                        </form>
+                    </div>
+                    <div id="done1" style="visibility: hidden; margin: 19px;">
+                        <img src="../static/check_1828643.png" alt="Successfully Submitted" height="32px" width="32px">
+                        <p>Thank you for your support</p>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div id="mid" style="border: 2px solid;">
+            <div id="content-mid">
+                <center>
+                    <h3 style="color: chocolate; padding: 9px;">Protoype 2</h3>
+                    <p>
+                        This contain a advance sensor, results more accurate data works on same principles as 1st Protoype
+                    </p>
+                    <ul style="margin: 9px; display: inline-block;">
+                        <u>Same as Protoype 1</u>
+                        <li>more accuracy</li>
+                    </ul>
+                    <h4 class="join">join wishlist
+                        <button id="btn-2" onclick="join_mid()">Join</button>
+                    </h4>
+                    <p style="padding: 3px;">&#8377 1015</p>
+                    <div id="join-mid" style="visibility: hidden;">
+                        <form method="post" action="/upvote">
+                            <input type="hidden" name="type" value="mid">
+                            Email: <input type="email" name="email" id="email" placeholder="username@gmail.com" required><br>
+                            Name: <input type="text" name="username" id="username" placeholder="User Name" required><br>
+                            <input style="margin: 3px;" type="submit" value="Submit" onclick="done2()">
+                        </form>
+                    </div>
+                    <div id="done2" style="visibility: hidden; margin: 19px;">
+                        <img src="../static/check_1828643.png" alt="Successfully Submitted" height="32px" width="32px">
+                        <p>Thank you for your support</p>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- <p class="footer-text-left"> -->
+            <a href="https://www.freepik.com/author/user17392997/icons/pixel-perfect-flat_343?t=f#from_element=families_block" class="menu">
+            Icon_by-Pixel_perfect
+            </a>
+            <a class="menu" href="#">2024&copy;</p></a>
+        <!-- </p> -->
+    </footer>
+    </center>
+</body>
+<script src="./static/script.js"></script>
+</html>
