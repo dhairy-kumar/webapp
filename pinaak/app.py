@@ -50,4 +50,4 @@ def response():
 def method_name():
     return render_template("about.html", title='About')
 
-app.run(debug=True)
+app.run()
