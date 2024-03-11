@@ -7,10 +7,8 @@ db = TinyDB('db.json')
 User = Query()
 
 #functions---------------------------------------------------
-def initialize_table():
-    global table, table2
-    table = db.table('data')
-    table2 = db.table('meta-data')
+table = db.table('data')
+table2 = db.table('meta-data')
 
 def count_visiter():
     t = table2.search(User.name == "visitor")
@@ -52,6 +50,4 @@ def response():
 def method_name():
     return render_template("about.html", title='About')
 
-if __name__ == '__main__':
-    initialize_table()
-    app.run(debug=True)
+app.run(debug=True)
